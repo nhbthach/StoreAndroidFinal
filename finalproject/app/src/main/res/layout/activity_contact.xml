@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.ContactActivity"
+    android:background="#F0F4C3">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/id_toolbarLienhe"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Liên hệ"
+        app:titleTextColor="#000000">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/id_imageviewContact1"
+        android:layout_width="114dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        android:src="@drawable/boss"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_textviewContact1"
+        android:layout_width="245dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="132dp"
+        android:gravity="center"
+        android:text="Ngô Hoàng Bảo Thạch"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toEndOf="@+id/id_imageviewContact1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/id_imageviewContact2"
+        android:layout_width="114dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_imageviewContact1"
+        app:layout_constraintVertical_bias="0.134"
+        android:src="@drawable/mail" />
+
+    <ImageView
+        android:id="@+id/id_imageviewContact3"
+        android:layout_width="114dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_imageviewContact2"
+        android:src="@drawable/tele" />
+
+    <TextView
+        android:id="@+id/id_textviewContact2"
+        android:layout_width="236dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="124dp"
+        android:text="nhbthach@gmail.com"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toEndOf="@+id/id_imageviewContact2"
+        app:layout_constraintTop_toBottomOf="@+id/id_textviewContact1" />
+
+    <TextView
+        android:id="@+id/id_textviewContact3"
+        android:layout_width="235dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="96dp"
+        android:gravity="center"
+        android:text="0974757799"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toEndOf="@+id/id_imageviewContact3"
+        app:layout_constraintTop_toBottomOf="@+id/id_textviewContact2" />
+
+    <TextView
+        android:id="@+id/id_textviewContactThanks"
+        android:layout_width="395dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="88dp"
+        android:gravity="center"
+        android:text="Cảm ơn quý khách đã sử dụng dịch vụ!"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/id_textviewTitle"
+        android:layout_width="142dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="VStore"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_textviewContactWebsite"
+        android:layout_width="334dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="6dp"
+        android:text="http://storevnapcs.000webhostapp.com/"
+        android:textSize="18sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_textviewContactThanks"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

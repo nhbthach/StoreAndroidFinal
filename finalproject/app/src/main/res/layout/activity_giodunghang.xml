@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F4C3">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="#ff2345"
+        android:id="@+id/id_toolbarGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Giỏ Hàng" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="412dp"
+        android:layout_height="480dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_toolbarGioHang">
+
+        <TextView
+            android:id="@+id/id_textviewThongBao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Giỏ Hàng Bạn Đang Trống"
+            android:textSize="28sp" />
+
+        <ListView
+            android:id="@+id/id_listviewGioHang"
+            android:layout_width="match_parent"
+            android:layout_height="426dp"></ListView>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/id_textviewGioHangTextTongTien"
+        android:layout_width="144dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Tổng tiền :"
+        android:textStyle="bold"
+        android:textColor="#ff2345"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_buttonThanhToan"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/id_textviewTongTien"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="right"
+        android:text="Đồng"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_buttonThanhToan"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/id_buttonThanhToan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="8dp"
+        android:text="Thanh toán giỏ hàng"
+        app:layout_constraintBottom_toTopOf="@+id/id_buttonTiepTucMua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/id_buttonTiepTucMua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="16dp"
+        android:text="Tiếp tục mua hàng"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
